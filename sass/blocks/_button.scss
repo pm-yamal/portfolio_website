@@ -1,0 +1,51 @@
+.button {
+    //button 
+    height: 64px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #FBDC4D;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    //text 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 3.2;
+    color: #000;
+    white-space: nowrap;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        // button
+        height: 58px;
+        padding-left: 26px;
+        padding-right: 26px;
+        // text
+        line-height: 3;
+    }
+
+    /* Tablet Small */
+     @media (max-width: 899px) {
+        display: none;
+    }
+
+    &:hover {
+        background-color: rgb(252, 241, 191);
+    }
+    &:focus {
+        outline: none;
+        background-color: #caa605;
+    }
+}
+
+.button--light {
+    background-color: #eff7fc;
+
+    &:hover {
+        background-color: rgb(129, 202, 248);        
+    }
+    &:focus {
+        outline: none;
+        background-color: rgb(29, 166, 250);
+    }
+}

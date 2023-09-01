@@ -1,0 +1,22 @@
+.social-block {
+    display: flex;
+    column-gap: 30px;
+    
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        column-gap: 20px;
+    }
+}
+
+.social-button {
+    transition: 0.5s;
+    &:hover {
+        filter: brightness(1.5) drop-shadow(10px 10px 10px rgb(135, 135, 237));
+    }
+    
+    /* Tablet Small */
+    @media (max-width: 899px) {        
+        width: 38px;
+        height: 38px;       
+    }
+}

@@ -1,0 +1,114 @@
+.title-big {       
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 1;    
+    color: #000;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 58px;
+    }
+
+    /* Tablet Small */
+     @media (max-width: 899px) {
+        font-size: 42px;
+        word-spacing: 10px;        
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 32px;
+        word-spacing: 22px;
+    }
+}
+
+.title-medium {   
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.3;
+    color: #000;
+    
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 42px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        font-size: 32px;
+    }    
+}
+
+.title-small {   
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.3;
+    color: #000;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+       font-size: 32px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        font-size: 24px;
+    }
+}
+
+.subtitle {    
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;    
+    color: #000;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 20px;
+    }
+}
+
+.border-gradient {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: left bottom 15px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(#FBDC4D,#FBDC4D);
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        background-position: left bottom 10px;
+        background-size: 100% 10px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        background-position: left bottom 8px;
+        background-size: 100% 8px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        background-position: left bottom 4px;
+    }
+}
+
+.title-medium.border-gradient {
+    background-position: left bottom 10px;
+    background-size: 100% 8px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        background-position: left bottom 8px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        background-position: left bottom 4px;
+    }
+}
+
+.subtitle.border-gradient {   
+    background-position: left bottom 3px;
+    background-size: 100% 6px;
+}
