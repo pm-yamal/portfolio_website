@@ -4,7 +4,7 @@
     padding-bottom: 60px;    
 
     /* Tablet Small */
-     @media (max-width: 899px) {
+    @media (max-width: 899px) {
         padding-top: 12px;
         padding-bottom: 40px;
     }
@@ -38,7 +38,7 @@
     }
 
     /* Tablet Small */
-     @media (max-width: 899px) {
+    @media (max-width: 899px) {
         padding-top: 28px;
         width: 354px;
     }
@@ -130,7 +130,7 @@
     }
 
     /* Tablet Small */
-     @media (max-width: 899px) {
+    @media (max-width: 899px) {
         img {
             width: 290px;
             height: 250px;
@@ -159,8 +159,9 @@
         margin-top: -90px;
     }
 
+    // Не сходится perfect pixel
     /* Mobile */
-    @media (max-width: 767px) {
+    @media (max-width: 767px) {        
         max-width: 320px;
         margin-top: 0px;        
     }
@@ -197,7 +198,7 @@
     }
 
     /* Mobile */
-     @media (max-width: 767px) {
+    @media (max-width: 767px) {
         flex-direction: column;
         row-gap: 24px;
     }
