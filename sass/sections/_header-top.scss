@@ -8,6 +8,14 @@
     z-index: 1;
 }
 
+// Не сходится perfect pixel
+// .header-top .container {
+//     /* Mobile */
+//     @media (max-width: 767px) {
+//         width: 100%;
+//     }
+// }
+
 .header-top__row {
     display: flex;
     align-items: center;
@@ -35,7 +43,7 @@
     }
 
     /* Tablet Big */
-     @media (max-width: 1139px) {
+    @media (max-width: 1139px) {
         font-size: 18px;        
     }
 
@@ -66,20 +74,19 @@
 
 .header-top__social a + a {
     /* Tablet Big */
-     @media (max-width: 1139px) {
+    @media (max-width: 1139px) {
         width: 36px;
         height: 36px;        
     }
 
     /* Tablet Small */
-     @media (max-width: 899px) {        
+    @media (max-width: 899px) {        
         width: 40px;
         height: 25px;        
     }
 }
 
-.header-top__social-button {  
-
+.header-top__social-button {
     /* Tablet Small */
     @media (max-width: 899px) {
         display: none;
