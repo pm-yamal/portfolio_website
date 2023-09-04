@@ -33,4 +33,14 @@
     @media (max-width: 1139px) {
         font-size: 14px;
     }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        margin-right: 8px;
+        p {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            } 
+        }
+    }
 }
