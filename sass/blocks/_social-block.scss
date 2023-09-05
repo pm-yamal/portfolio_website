@@ -2,8 +2,8 @@
     display: flex;
     column-gap: 30px;
     
-    /* Tablet Small */
-    @media (max-width: 899px) {
+    /* Tablet Big */
+    @media (max-width: 1139px) {
         column-gap: 20px;
     }
 }
