@@ -31,6 +31,11 @@
     }    
 }
 
+.header-top__mobile-icon {
+    cursor: pointer;
+    z-index: 90;
+}
+
 .header-top__nav-contacts {
     display: none;
 
@@ -39,6 +44,8 @@
         display: block;
     }    
 }
+
+
 
 .header-top__nav {
     /* Tablet Small */
