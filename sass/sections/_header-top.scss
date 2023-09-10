@@ -22,7 +22,7 @@
     justify-content: space-between;
 }
 
-.header-top__mobile, .header-top__mobile-icon {
+.header-top__mobile{
     display: none;
 
     /* Tablet Small */
@@ -31,10 +31,50 @@
     }    
 }
 
-.header-top__mobile-icon {
-    cursor: pointer;
-    z-index: 90;
+.header-top__toggle {
+
 }
+.header-top__toggle-middle {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+}
+
+.header-top__toggle-middle::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+}
+
+.header-top__toggle-middle::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+}
+
+/* Состояние бургера при нажатии*/
+.header-top__toggle-middle.active {
+    background-color: transparent;
+}
+
+.header-top__toggle-middle.active::before {
+
+}
+
+.header-top__toggle-middle.active::after {
+    
+}
+
+
 
 .header-top__nav-contacts {
     display: none;
