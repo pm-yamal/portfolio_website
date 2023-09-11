@@ -799,6 +799,82 @@ section {
   }
 }
 
+.toggle {
+  display: none;
+  /* Tablet Small */
+}
+@media (max-width: 899px) {
+  .toggle {
+    width: 40px;
+    height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+}
+
+.toggle__middle {
+  position: relative;
+  width: 40px;
+  height: 5px;
+  background-color: #000;
+}
+.toggle__middle::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 40px;
+  height: 5px;
+  background-color: #000;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+.toggle__middle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 5px;
+  background-color: #000;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+.toggle.toggle--active .toggle__middle {
+  background-color: transparent;
+}
+.toggle.toggle--active .toggle__middle::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+  -webkit-transition: 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+.toggle.toggle--active .toggle__middle::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  -webkit-transition: 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
 .header-top {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -831,38 +907,6 @@ section {
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.header-top__toggle-middle {
-  position: relative;
-  width: 40px;
-  height: 5px;
-  background-color: #000;
-}
-
-.header-top__toggle-middle::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 40px;
-  height: 5px;
-  background-color: #000;
-}
-
-.header-top__toggle-middle::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 40px;
-  height: 5px;
-  background-color: #000;
-}
-
-/* Состояние бургера при нажатии*/
-.header-top__toggle-middle.active {
-  background-color: transparent;
 }
 
 .header-top__nav-contacts {

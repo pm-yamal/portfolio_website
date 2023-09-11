@@ -1,0 +1,67 @@
+//переменные с широтой и высотой для контейнера
+$width: 40px;
+$height:25px;
+
+// переменные с широтой и высотой для линий в иконке  
+$lineWidth: 40px;
+$lineHeight: 5px;
+
+// burger
+.toggle {
+    display: none;
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        width: $width;
+        height: $height;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        cursor: pointer;
+    }    
+}
+
+.toggle__middle {
+    position: relative;
+    width: $lineWidth;
+    height: $lineHeight;
+    background-color: #000;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: $lineWidth;
+        height: $lineHeight;
+        background-color: #000;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: $lineWidth;
+        height: $lineHeight;
+        background-color: #000;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+}
+
+// burger active
+.toggle.toggle--active .toggle__middle {
+    background-color: transparent;
+
+    &::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: 0.2s linear, transform 0.2s ease-in 0.2s;;
+    }
+}

@@ -7,12 +7,10 @@ body {
 	min-height: 100vh; /* sticky footer */
 	display: flex; /* sticky footer */
 	flex-direction: column; /* sticky footer */
-
 	font-family: 'Montserrat', sans-serif;
     color: $black-color;
     font-size: 16px;
     line-height: 1.6;
-
     text-rendering: optimizeSpeed;
     //text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -36,11 +34,9 @@ section {
     margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-
     &--fluid {
         max-width: unset;
     }
-
     &--no-padding {
         padding: 0;
     }
