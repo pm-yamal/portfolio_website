@@ -9,12 +9,12 @@
 }
 
 // Не сходится perfect pixel
-// .header-top .container {
-//     /* Mobile */
-//     @media (max-width: 767px) {
-//         width: 100%;
-//     }
-// }
+.header-top .container {
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
 
 .header-top__row {
     display: flex;
@@ -48,11 +48,18 @@
         width: 100%;
         background-color: rgba(37, 73, 116, 0.8);
         z-index: 2;
+        display: none;
+
+        &.open {
+            display: block;
+        }
 
         .header-top__menu-content {     
             background-color: #fff;
             padding-top: 30px;
             padding-left: 15px;
+            padding-right: 35px;
+            padding-bottom: 40px;            
             width: 320px;
             display: flex;
             flex-direction: column;
@@ -96,6 +103,9 @@
     /* Tablet Small */
     @media (max-width: 899px) {
         display: block;
+    }
+    .social-block {
+        margin-bottom: 20px;
     }    
 }
 
