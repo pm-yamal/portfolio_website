@@ -115,6 +115,9 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+body.body--lock {
+  overflow: hidden;
+}
 
 body > * {
   -ms-flex-negative: 0;
@@ -941,10 +944,14 @@ section {
     width: 100%;
     background-color: rgba(37, 73, 116, 0.8);
     z-index: 2;
-    display: none;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
-  .header-top__menu.open {
-    display: block;
+  .header-top__menu.header-top__menu--open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .header-top__menu .header-top__menu-content {
     background-color: #fff;
