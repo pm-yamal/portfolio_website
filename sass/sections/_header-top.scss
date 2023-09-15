@@ -6,6 +6,11 @@
     position: sticky;
     top: -40px;
     z-index: 1;
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        padding-top: 32px;
+        top: -22px;
+    }
 }
 
 // Не сходится perfect pixel
