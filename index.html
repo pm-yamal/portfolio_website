@@ -12,10 +12,11 @@
 		<meta name="keywords" content="ключевые слова, фразы">
 
 		<!-- Styles -->
-		<link rel="stylesheet" href="./css/main.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css">
 
 		<!-- Open Graph -->
 		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
@@ -121,7 +122,7 @@
 				<div class="container">
 					<div class="header-skills__row">
 						<!-- Left column -->
-						<div class="header-skills__left">
+						<div class="header-skills__left" data-aos="zoom-in" data-aos-offset="250">
 							<div class="header-skills__title">
 								<h3 class="title-small">Что я умею:</h3>
 							</div>
@@ -134,7 +135,7 @@
 							</ul>
 						</div>						
 						<!-- Right column -->
-						<div class="header-skills__right">
+						<div class="header-skills__right" data-aos="zoom-in" data-aos-offset="250">
 							<div class="header-skills__title">
 								<h3 class="title-small">На связи:</h3>
 							</div>
@@ -319,7 +320,9 @@
 				</div>
 			</div>
 		</footer>
-
+		<!-- Подключение скриптов -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>AOS.init();</script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

@@ -139,11 +139,10 @@
     @media (max-width: 899px) {
         max-width: 768px;
         margin-top: -90px;
-    }
-    // Не сходится perfect pixel
+    }    
     /* Mobile */
     @media (max-width: 767px) {        
-        // max-width: 320px;
+        // max-width: 320px; // Не сходится perfect pixel
         margin-top: 0px;        
     }
 }

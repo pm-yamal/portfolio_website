@@ -1,9 +1,5 @@
-// document.querySelector('.toggle').addEventListener('click', function(){    
-//     this.classList.toggle('toggle--active');
-// })
-
 document.addEventListener('DOMContentLoaded', function(){
-// показать/скрыть мобильное меню, зафиксировать body
+    // показать/скрыть мобильное меню, зафиксировать body
     const menuToggle = document.querySelector('#toggle');
     const headerMenu = document.querySelector('#header-top__menu');
     const bodyLock = document.body;
@@ -20,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function(){
             bodyLock.classList.add('body--lock');
         }
     });
-
     headerMenu.addEventListener('click', function(){
         this.classList.remove('header-top__menu--open');
         menuToggle.classList.remove('toggle--active');
