@@ -51,10 +51,10 @@
 					<div class="header-top__menu" id="header-top__menu">
 						<div class="header-top__menu-content">
 							<ul>
-								<li><a href="#header-skills" class="header-top__menu-item">Навыки</a></li>
-								<li><a href="#portfolio" class="header-top__menu-item">Портфолио</a></li>
-								<li><a href="#howiwork" class="header-top__menu-item">Как я работаю</a></li>
-								<li><a href="#contacts" class="header-top__menu-item">Контакты</a></li>
+								<li><a href="#header-skills" class="header-top__menu-item" data-aos="zoom-in" data-aos-delay="300">Навыки</a></li>
+								<li><a href="#portfolio" class="header-top__menu-item" data-aos="zoom-in" data-aos-delay="400">Портфолио</a></li>
+								<li><a href="#howiwork" class="header-top__menu-item" data-aos="zoom-in" data-aos-delay="500">Как я работаю</a></li>
+								<li><a href="#contacts" class="header-top__menu-item" data-aos="zoom-in" data-aos-delay="600">Контакты</a></li>
 							</ul>													
 							<div class="header-top__menu-contacts">
 								<div class="social-block">
@@ -83,7 +83,7 @@
 				<div class="container">
 					<div class="header-title__row">
 						<!-- Content -->
-						<div class="header-title__content">
+						<div class="header-title__content" data-aos="fade-right" data-aos-duration="1000">
 							<!-- Name -->
 							<div class="header-title__name">
 								<h1 class="title-big border-gradient">Марат Рахимов</h1>
@@ -101,7 +101,7 @@
 							</div>
 						</div>
 						<!-- Picture -->
-						<div class="header-title__img">
+						<div class="header-title__img" data-aos="fade-left" data-aos-duration="1000">
 							<img src="./img/header/webdeveloper-475.jpg" alt="Webdeveloper">
 							<!-- Mobile adaptation -->
 							<div class="header-title__text-mobile">
@@ -156,7 +156,7 @@
 			<!-- Section portfolio -->
 			<section class="portfolio" id="portfolio">
 			<div class="container">
-				<div class="portfolio__header" data-aos="zoom-in">
+				<div class="portfolio__header" data-aos="zoom-in" data-aos-duration="1000">
 					<h2 class="title-medium border-gradient">Портфолио</h2>
 				</div>
 				<div class="portfolio__projects">
@@ -226,7 +226,7 @@
 			<!-- Section how-i-work -->
 			<section class="howiwork" id="howiwork">
 			<div class="container">
-				<div class="howiwork__header" data-aos="zoom-in">
+				<div class="howiwork__header" data-aos="zoom-in" data-aos-duration="1000">
 					<h2 class="title-medium border-gradient">Как я работаю</h2>
 				</div>
 				<div class="timeline">
@@ -275,7 +275,7 @@
 			<section class="contacts" id="contacts">
 			<div class="container">
 				<!-- Header -->
-				<div class="contacts__header" data-aos="zoom-in">
+				<div class="contacts__header" data-aos="zoom-in" data-aos-duration="1000">
 					<h2 class="title-medium border-gradient">Контакты</h2> 
 				</div>
 				<!-- Main -->
@@ -322,7 +322,9 @@
 		</footer>
 		<!-- Подключение скриптов -->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>AOS.init();</script>
+		<script>
+			AOS.init();
+		</script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
