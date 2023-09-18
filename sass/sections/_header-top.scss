@@ -55,7 +55,6 @@
         z-index: 2;
         transform: translateX(100%);
         transition: 0.3s ease-in-out;
-
         &.header-top__menu--open {
             transform: translateX(0);
         }
@@ -89,6 +88,11 @@
     }
 }
 
+// .header-top__menu-content a:hover, :active, :focus {
+//     border-bottom: 4px solid #FBDC4D;
+// }
+
+
 .header-top__menu-item {    
     font-weight: 600;
     font-size: 20px;
@@ -96,8 +100,8 @@
     color: #000;    
     transition: 0.5s;
     &:hover {     
-        color: rgb(247, 103, 25);
-    }
+        color: #FF543E;        
+    }    
     /* Tablet Big */
     @media (max-width: 1139px) {
         font-size: 18px;        
@@ -131,4 +135,8 @@
         width: 36px;
         height: 36px;        
     }
+}
+
+.header-top__social-button:hover {
+    opacity: 0.75;    
 }

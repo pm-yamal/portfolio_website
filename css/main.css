@@ -402,6 +402,9 @@ section {
   color: #1A71D2;
   /* Tablet Big */
 }
+.link:hover {
+  color: #FF543E;
+}
 @media (max-width: 1139px) {
   .link {
     font-size: 18px;
@@ -1018,7 +1021,7 @@ section {
   /* Tablet Big */
 }
 .header-top__menu-item:hover {
-  color: #f76719;
+  color: #FF543E;
 }
 @media (max-width: 1139px) {
   .header-top__menu-item {
@@ -1064,6 +1067,10 @@ section {
     width: 36px;
     height: 36px;
   }
+}
+
+.header-top__social-button:hover {
+  opacity: 0.75;
 }
 
 .header {
@@ -1204,6 +1211,7 @@ section {
   height: 410px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10%;
 }
 @media (max-width: 1139px) {
   .header-title__img {
