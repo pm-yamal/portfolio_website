@@ -435,8 +435,43 @@ section {
 
 .card__image {
   max-height: 370px;
+  position: relative;
+  overflow: hidden;
   /* Tablet Big */
   /* Tablet Small */
+}
+.card__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(255, 221, 85, 0.75);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card__image span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+  padding: 14px 20px;
+  background-color: #ef6857;
+  border-radius: 80px;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 @media (max-width: 1139px) {
   .card__image {
@@ -447,6 +482,15 @@ section {
   .card__image {
     max-height: 180px;
   }
+}
+
+.card:hover .card__image::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card:hover .card__image span {
+  opacity: 1;
 }
 
 .card__image img {
@@ -496,6 +540,9 @@ section {
   /* Tablet Big */
   /* Tablet Small */
 }
+.card__title:hover {
+  color: #ef6857;
+}
 @media (max-width: 1139px) {
   .card__title {
     margin-bottom: 6px;
@@ -516,6 +563,9 @@ section {
   color: #000;
   /* Tablet Big */
   /* Tablet Small */
+}
+.card__text:hover {
+  color: #ef6857;
 }
 @media (max-width: 1139px) {
   .card__text {
@@ -1269,13 +1319,7 @@ section {
 .header-skills {
   padding-top: 70px;
   margin-top: -70px;
-  /* Tablet Big */
   /* Mobile */
-}
-@media (max-width: 1139px) {
-  .header-skills {
-    padding-top: 56px;
-  }
 }
 @media (max-width: 767px) {
   .header-skills {
@@ -1409,6 +1453,7 @@ section {
 @media (max-width: 1139px) {
   .portfolio__header {
     margin-bottom: 40px;
+    padding-top: 30px;
   }
 }
 @media (max-width: 899px) {
@@ -1474,6 +1519,7 @@ section {
 @media (max-width: 1139px) {
   .howiwork__header {
     margin-bottom: 50px;
+    padding-top: 8px;
   }
 }
 @media (max-width: 899px) {

@@ -151,11 +151,7 @@
 // Header-skills
 .header-skills {    
     padding-top: 70px;
-    margin-top: -70px;
-    /* Tablet Big */
-    @media (max-width: 1139px) {
-        padding-top: 56px;              
-    }
+    margin-top: -70px;   
     /* Mobile */
     @media (max-width: 767px) {
         padding-top: 80px;       
