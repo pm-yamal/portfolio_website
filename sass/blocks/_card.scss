@@ -47,6 +47,14 @@
         z-index: 2;
         opacity: 0;
         transition: 0.7s;
+        /* Tablet Small */
+        @media (max-width: 899px) {
+            font-size: 14px;
+        }
+        /* Mobile */
+        @media (max-width: 767px) {
+            font-size: 10px;
+        }
     }
     /* Tablet Big */
     @media (max-width: 1139px) {

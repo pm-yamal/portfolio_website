@@ -22,3 +22,12 @@ document.addEventListener('DOMContentLoaded', function(){
         bodyLock.classList.remove('body--lock');
     });
 });
+// mixitup
+$(document).ready(function(){
+    let containerEl = document.querySelector('#portfolio__projects');
+    let mixer = mixitup(containerEl, {
+        classNames: {
+            block: ""
+        }
+    });
+})

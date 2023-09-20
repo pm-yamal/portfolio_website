@@ -472,6 +472,18 @@ section {
   opacity: 0;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  /* Tablet Small */
+  /* Mobile */
+}
+@media (max-width: 899px) {
+  .card__image span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .card__image span {
+    font-size: 10px;
+  }
 }
 @media (max-width: 1139px) {
   .card__image {
