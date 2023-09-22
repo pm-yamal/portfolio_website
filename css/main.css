@@ -1481,12 +1481,27 @@ section {
   display: flex;
   -webkit-column-gap: 70px;
           column-gap: 70px;
+  /* Mobile */
+}
+@media (max-width: 767px) {
+  .portfolio-mix__btn {
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .portfolio-mix__btn button {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
   color: #000;
+}
+@media (max-width: 767px) {
+  .portfolio-mix__btn button {
+    font-size: 16px;
+  }
 }
 
 button.control-active {
