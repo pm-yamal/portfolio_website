@@ -1663,6 +1663,10 @@ button.control-active {
   }
 }
 
+.contacts__list {
+  margin-bottom: 42px;
+}
+
 .contacts__list-item {
   margin-bottom: 22px;
   font-weight: 600;
@@ -1717,6 +1721,7 @@ button.control-active {
   font-weight: 400;
   font-size: 18px;
   color: #000;
+  margin-bottom: 32px;
   /* Tablet Big */
   /* Tablet Small */
   /* Mobile */
