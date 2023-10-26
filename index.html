@@ -8,8 +8,8 @@
 
 		<!-- Title and SEO -->
 		<title>Рахимов Марат Верстка сайтов</title>
-		<meta name="description" content="Описание страницы">
-		<meta name="keywords" content="ключевые слова, фразы">
+		<meta name="description" content="Верстка сайтов">
+		<meta name="keywords" content="верстка, сайты, разработчик, Марат Рахимов, ЯНАО, Салехард, Лабытнанги, Надым>
 
 		<!-- Styles -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,8 +21,8 @@
 		<!-- Open Graph -->
 		<!-- <meta property="og:url" content="https://pm-yamal.ru/"/> -->
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="Туристическое агентство Форест Тревел">
-		<meta property="og:description" content="Турпоходы по дикой природе">
+		<meta property="og:title" content="Рахимов Марат. Верстка сайтов">
+		<meta property="og:description" content="Разработка сайтов на заказ">
 		<meta property="og:image" content="./img/opengraph.jpg">
 
 		<!-- Favicons -->
@@ -312,9 +312,20 @@
 					</div>
 					<!-- Right column -->
 					<div class="contacts__right" data-aos="fade-left" data-aos-duration="1000">
-						<div class="contacts__text">
-							<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом — напишите мне.</p>
-						</div>
+						<form action="#" class="contacts__form">
+							<div class="form-item">
+								<span class="fake-placeholder">Ваш e-mail</span>
+								<input class="form-input" type="email" name="email" >
+							</div>
+							<div class="form-item">
+								<span class="fake-placeholder">Текст сообщения</span>
+								<textarea class="form-input" name="message" id="#" cols="30" rows="10" ></textarea>
+							</div>
+							<div class="form-item">
+								<input class="form-btn" type="submit" value="Отправить" >
+							</div>
+						</form>
+						<div id="answer"></div>
 						<div class="contacts__image">
 							<img src="./img/contacts/quote-icon.svg" alt="Quote">
 						</div>						
